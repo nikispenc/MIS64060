@@ -1,1 +1,78 @@
+---
+title: "Assignment 1"
+output: pdf_document
+date: "2022-09-11"
+---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
+
+When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+  |..........                                                            |  14%
+  ordinary text without R code
+
+  |....................                                                  |  29%
+label: setup (with options) 
+
+
+processing file: Assignment-1.Rmd
+List of 1
+ $ include: logi FALSE
+
+  |..............................                                        |  43%
+  ordinary text without R code
+
+  |........................................                              |  57%
+label: cars
+  |..................................................                    |  71%
+  ordinary text without R code
+
+  |............................................................          |  86%
+label: pressure (with options) 
+List of 1
+ $ echo: logi FALSE
+
+  |......................................................................| 100%
+  ordinary text without R code
+
+
+/Users/nikispencer/Desktop/RStudio.app/Contents/MacOS/quarto/bin/tools/pandoc +RTS -K512m -RTS Assignment-1.knit.md --to latex --from markdown+autolink_bare_uris+tex_math_single_backslash --output Assignment-1.tex --lua-filter /Library/Frameworks/R.framework/Versions/4.2/Resources/library/rmarkdown/rmarkdown/lua/pagebreak.lua --lua-filter /Library/Frameworks/R.framework/Versions/4.2/Resources/library/rmarkdown/rmarkdown/lua/latex-div.lua --self-contained --highlight-style tango --pdf-engine pdflatex --variable graphics --variable 'geometry:margin=1in' 
+output file: Assignment-1.knit.md
+
+! sh: pdflatex: command not found
+
+Error: LaTeX failed to compile Assignment-1.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See Assignment-1.log for more info.
+In addition: Warning message:
+In system2(..., stdout = if (use_file_stdout()) f1 else FALSE, stderr = f2) :
+  error in running command
+Execution halted
+
+No LaTeX installation detected (LaTeX is required to create PDF output). You should install a LaTeX distribution for your platform: https://www.latex-project.org/get/
+
+  If you are not sure, you may install TinyTeX in R: tinytex::install_tinytex()
+
+  Otherwise consider MiKTeX on Windows - http://miktex.org
+
+  MacTeX on macOS - https://tug.org/mactex/
+  (NOTE: Download with Safari rather than Chrome _strongly_ recommended)
+
+  Linux: Use system package manager
