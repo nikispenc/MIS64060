@@ -1,0 +1,934 @@
+R version 4.2.1 (2022-06-23) -- "Funny-Looking Kid"
+Copyright (C) 2022 The R Foundation for Statistical Computing
+Platform: x86_64-apple-darwin17.0 (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+  Natural language support but running in an English locale
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> library(readxl)
+> Pharmaceuticals <- read_excel("~/Downloads/Pharmaceuticals.xlsx")
+New names:                                                                                       
+• `` -> `...2`
+• `` -> `...3`
+• `` -> `...4`
+• `` -> `...5`
+• `` -> `...6`
+• `` -> `...7`
+• `` -> `...8`
+• `` -> `...9`
+• `` -> `...10`
+• `` -> `...11`
+• `` -> `...12`
+• `` -> `...13`
+• `` -> `...14`
+> View(Pharmaceuticals)
+> library(pivottabler)
+Error in library(pivottabler) : there is no package called ‘pivottabler’
+> melt("Online")
+Error in melt("Online") : could not find function "melt"
+> pivot("Online, CC, Loan")
+Error in pivot("Online, CC, Loan") : could not find function "pivot"
+> 
+> installed.packages("pivottabler")
+     Package LibPath Version Priority Depends Imports LinkingTo Suggests Enhances License
+     License_is_FOSS License_restricts_use OS_type Archs MD5sum NeedsCompilation Built
+> library(pivottabler)
+Error in library(pivottabler) : there is no package called ‘pivottabler’
+> installed.packages("pivottabler")
+     Package LibPath Version Priority Depends Imports LinkingTo Suggests Enhances License
+     License_is_FOSS License_restricts_use OS_type Archs MD5sum NeedsCompilation Built
+> library(base64enc)
+> library(bitops)
+> library(boot)
+> library(bslib)
+
+Attaching package: ‘bslib’
+
+The following object is masked from ‘package:utils’:
+
+    page
+
+> library(cachem)
+> library(caTools)
+
+Attaching package: ‘caTools’
+
+The following objects are masked from ‘package:base64enc’:
+
+    base64decode, base64encode
+
+> library(cellranger)
+> library(class)
+> library(cli)
+> library(cluster)
+> library(codetools)
+> library(compiler)
+> library(cpp11)
+> library(crayon)
+
+Attaching package: ‘crayon’
+
+The following object is masked from ‘package:cli’:
+
+    num_ansi_colors
+
+> library(digest)
+> library(e1071)
+> library(ellipsis)
+> library(evaluate)
+> library(fansi)
+> library(fastmap)
+> library(foreign)
+> library(fs)
+> library(glue)
+> library(grid)
+> library(highr)
+> library(hms)
+> library(htmltools)
+> library(jquerylib)
+> library(jsonlite)
+> library(KernSmooth)
+KernSmooth 2.23 loaded
+Copyright M. P. Wand 1997-2009
+> library(knitr)
+> library(lattice)
+
+Attaching package: ‘lattice’
+
+The following object is masked from ‘package:boot’:
+
+    melanoma
+
+> library(lifecycle)
+> library(magrittr)
+> library(markdown)
+> library(MASS)
+> library(Matrix)
+
+Attaching package: ‘Matrix’
+
+The following object is masked from ‘package:bitops’:
+
+    %&%
+
+> library(memoise)
+> library(mgcv)
+Loading required package: nlme
+This is mgcv 1.8-40. For overview type 'help("mgcv-package")'.
+> library(mime)
+> library(nnet)
+
+Attaching package: ‘nnet’
+
+The following object is masked from ‘package:mgcv’:
+
+    multinom
+
+> library(parallel)
+> library(pillar)
+
+Attaching package: ‘pillar’
+
+The following object is masked from ‘package:cli’:
+
+    style_bold
+
+> library(pkgconfig)
+> library(prettyunits)
+> library(progress)
+> library(proxy)
+
+Attaching package: ‘proxy’
+
+The following object is masked from ‘package:Matrix’:
+
+    as.matrix
+
+The following objects are masked from ‘package:stats’:
+
+    as.dist, dist
+
+The following object is masked from ‘package:base’:
+
+    as.matrix
+
+> library(R6)
+> library(rappdirs)
+> library(Rcpp)
+> library(rematch)
+> library(rlang)
+
+Attaching package: ‘rlang’
+
+The following object is masked from ‘package:magrittr’:
+
+    set_names
+
+The following objects are masked from ‘package:jsonlite’:
+
+    flatten, unbox
+
+The following object is masked from ‘package:crayon’:
+
+    chr
+
+The following object is masked from ‘package:bitops’:
+
+    %|%
+
+> library(rmarkdown)
+> library(rpart)
+> library(sass)
+> library(spatial)
+> library(splines)
+> library(stats4)
+> library(stringi)
+> library(stringr)
+> library(survival)
+
+Attaching package: ‘survival’
+
+The following object is masked from ‘package:boot’:
+
+    aml
+
+> library(tcltk)
+tcltk DLL is linked to '/opt/X11/lib/libX11.6.dylib'
+Error: package or namespace load failed for ‘tcltk’:
+ .onLoad failed in loadNamespace() for 'tcltk', details:
+  call: fun(libname, pkgname)
+  error: X11 library is missing: install XQuartz from www.xquartz.org
+> library(tibble)
+> library(tinytex)
+
+Attaching package: ‘tinytex’
+
+The following object is masked from ‘package:rlang’:
+
+    check_installed
+
+> library(tools)
+> library(utf8)
+> library(vctrs)
+
+Attaching package: ‘vctrs’
+
+The following object is masked from ‘package:tibble’:
+
+    data_frame
+
+> library(xfun)
+
+Attaching package: ‘xfun’
+
+The following objects are masked from ‘package:tools’:
+
+    file_ext, Rcmd
+
+The following objects are masked from ‘package:fs’:
+
+    dir_create, dir_exists, file_exists
+
+The following object is masked from ‘package:cli’:
+
+    tree
+
+The following objects are masked from ‘package:base’:
+
+    attr, isFALSE
+
+> library(yaml)
+> installed.packages(pivottabler)
+Error in installed.packages(pivottabler) : object 'pivottabler' not found
+> installed.packages("pivottabler")
+     Package LibPath Version Priority Depends Imports LinkingTo Suggests Enhances License
+     License_is_FOSS License_restricts_use OS_type Archs MD5sum NeedsCompilation Built
+> install_github("cbailiss/pivottabler", buildVignettes=TRUE)
+Error in loadNamespace(x) : there is no package called ‘remotes’
+> library("pivottabler")
+Error in library("pivottabler") : 
+  there is no package called ‘pivottabler’
+> function(melt)
++ function(cast)
++ 
++ 
++ 
++ install_github("pivottabler")
+function(melt)
+function(cast)
+
+
+
+install_github("pivottabler")
+> library(pivottabler)
+Error in library(pivottabler) : there is no package called ‘pivottabler’
+> install_github("pivottabler")
+Error in loadNamespace(x) : there is no package called ‘remotes’
+> install.packages("pivottabler")
+Error in install.packages : Updating loaded packages
+
+Restarting R session...
+
+> install.packages("pivottabler")
+also installing the dependencies ‘rlang’, ‘lifecycle’, ‘withr’, ‘generics’, ‘tidyselect’, ‘dplyr’, ‘data.table’, ‘htmlwidgets’
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/rlang_1.0.6.tgz'
+Content type 'application/x-gzip' length 1809273 bytes (1.7 MB)
+==================================================
+downloaded 1.7 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/lifecycle_1.0.3.tgz'
+Content type 'application/x-gzip' length 121220 bytes (118 KB)
+==================================================
+downloaded 118 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/withr_2.5.0.tgz'
+Content type 'application/x-gzip' length 229317 bytes (223 KB)
+==================================================
+downloaded 223 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/generics_0.1.3.tgz'
+Content type 'application/x-gzip' length 77771 bytes (75 KB)
+==================================================
+downloaded 75 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/tidyselect_1.2.0.tgz'
+Content type 'application/x-gzip' length 218996 bytes (213 KB)
+==================================================
+downloaded 213 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/dplyr_1.0.10.tgz'
+Content type 'application/x-gzip' length 1310338 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/data.table_1.14.2.tgz'
+Content type 'application/x-gzip' length 2335113 bytes (2.2 MB)
+==================================================
+downloaded 2.2 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/htmlwidgets_1.5.4.tgz'
+Content type 'application/x-gzip' length 895244 bytes (874 KB)
+==================================================
+downloaded 874 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/pivottabler_1.5.4.tgz'
+Content type 'application/x-gzip' length 4192398 bytes (4.0 MB)
+==================================================
+downloaded 4.0 MB
+
+
+The downloaded binary packages are in
+	/var/folders/56/x41j57bx17z4l9p5_421zn280000gn/T//RtmpR8cRtl/downloaded_packages
+> library(pivottabler)
+> qpvt(Pharamaceuticals, "Online", "CC", "Loan")
+Error in checkArgument(3, TRUE, "", "qpvt", dataFrame, missing(dataFrame),  : 
+  object 'Pharamaceuticals' not found
+> library(pivottabler)
+> pt <- PivotTable$new()
+> pt$addData(Pharmaceuticals)
+> pt$addColumnDataGroups("Online")
+Error: PivotDataGroup$addDataGroups():  Column name 'Online' not found in 'Pharmaceuticals' data frame.
+> pt$addRowDataGroups("CC")
+Error: PivotDataGroup$addDataGroups():  Column name 'CC' not found in 'Pharmaceuticals' data frame.
+> library(pivottabler)
+> pt <- PivotTable$new()
+> pt$addData(Pharmaceuticals)
+> library(readxl)
+> UniversalBank_2 <- read_excel("~/Downloads/UniversalBank 2.xlsx")
+New names:                                                                                       
+• `` -> `...2`
+• `` -> `...3`
+• `` -> `...4`
+• `` -> `...5`
+• `` -> `...6`
+• `` -> `...7`
+• `` -> `...8`
+• `` -> `...9`
+• `` -> `...10`
+• `` -> `...11`
+• `` -> `...12`
+• `` -> `...13`
+• `` -> `...14`
+> View(UniversalBank_2)
+> library(pivottabler)
+> pt <- PivotTable$new()
+> pt$addData("Online")
+Error: PivotTable$addData():  dataFrame must be of type data.frame.  Type encountered: character.
+> pt$addData(Online)
+Error in checkArgument(private$p_argumentCheckMode, TRUE, "PivotTable",  : 
+  object 'Online' not found
+> pt$addData(UniversalBank_2)
+> pt$addColumnDataGroups("Online")
+Error: PivotDataGroup$addDataGroups():  Column name 'Online' not found in 'UniversalBank_2' data frame.
+> pt$addColumnDataGroups("column 13")
+Error: PivotDataGroup$addDataGroups():  Column name 'column 13' not found in 'UniversalBank_2' data frame.
+> pt$addColumnDataGroups(13)
+Error: PivotTable$addColumnDataGroups():  variableName must be of type character.  Type encountered: numeric.
+> pt$addColumnGroup("Online")
+> pt$addRowGroup(CCAvg)
+Error in checkArgument(private$p_argumentCheckMode, TRUE, "PivotTable",  : 
+  object 'CCAvg' not found
+> pt$addRowGroup("CCAvg")
+> pt$addRowGroup("Personal Loan")
+> pt$defineCalculation("Total Online Banking", caption = "Total Online", summariseExpression = n())
+Error: PivotTable$defineCalculation():  calculationName must be specified
+> library(pivottabler)
+> install.packages("qpvt")
+Warning in install.packages :
+  package ‘qpvt’ is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages
+> 
+> pt$evaluatePivot()
+> pt
+     ALL  
+ALL       
+ALL       
+> library(pivottabler)
+> pt<-PivotTable$new()
+> pt$addData(UniversalBank_2)
+> pt$addColumnDataGroups("Online")
+Error: PivotDataGroup$addDataGroups():  Column name 'Online' not found in 'UniversalBank_2' data frame.
+> pt$addColumnGroup(Online)
+Error in checkArgument(private$p_argumentCheckMode, TRUE, "PivotTable",  : 
+  object 'Online' not found
+> pt$addColumnGroup("Online")
+> pt$addColumnDataGroups("Online")
+Error: PivotDataGroup$addDataGroups():  Column name 'Online' not found in 'UniversalBank_2' data frame.
+> pt$addRowGroup("CCAvg")
+> pt$addRowGroup("Personal Loan")
+> pt$defineCalculation(calculationName = "Total Online", summariseExpression = "n()")
+> pt$evaluatePivot()
+> pt
+     ALL   
+ALL  5001  
+ALL  5001  
+> library(pivottabler)
+> pt<-PivotTable$new()
+> pt$addData(dataFrame = UniversalBank_2)
+> pt$addColumnGroup("Online")
+> pt$addColumnDataGroups("Online")
+Error: PivotDataGroup$addDataGroups():  Column name 'Online' not found in 'UniversalBank_2' data frame.
+> pt$addData(Online)
+Error in checkArgument(private$p_argumentCheckMode, TRUE, "PivotTable",  : 
+  object 'Online' not found
+> pt$addData("Online")
+Error: PivotTable$addData():  dataFrame must be of type data.frame.  Type encountered: character.
+> pt$addRowGroup("Personal Loan")
+> pt$addRowGroup("CreditCard")
+> pt$defineCalculation(calculationGroupName = "Total Online",summariseExpression = n())
+Error: PivotTable$defineCalculation():  calculationName must be specified
+> pt$defineCalculation(calculationGroupName = "Total Online",summariseExpression = "n()")
+Error: PivotTable$defineCalculation():  calculationName must be specified
+> pt$evaluatePivot()
+> pt
+     ALL  
+ALL       
+ALL       
+> > library(pivottabler)
+Error: unexpected '>' in ">"
+> library(pivottabler)
+> pt<-PivotTable$new()
+> pt$addData(UniversalBank_2)
+> pt$addColumnGroup("Online")
+> pt$addRowGroup("CreditCard")
+> pt$addRowGroup("Personal Loan")
+> pt$defineCalculation(calculationName = "Total Online", summariseExpression = "n()")
+> pt$evaluatePivot()
+> pt
+     ALL   
+ALL  5001  
+ALL  5001  
+> bank=read_excel("UniversalBank_2")
+Error: `path` does not exist: ‘UniversalBank_2’
+> bank=read.csv(UniversalBank_2)
+Error in read.table(file = file, header = header, sep = sep, quote = quote,  : 
+  'file' must be a character string or connection
+> bank=read_excel(UniversalBank_2)
+Error: `path` must be a string
+> library(pivottabler)
+> pt<-PivotTable$new()
+> pt$addData(UniversalBank_2)
+> install.packages("melt")
+also installing the dependencies ‘sitmo’, ‘BH’, ‘dqrng’, ‘RcppEigen’
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/sitmo_2.0.2.tgz'
+Content type 'application/x-gzip' length 398702 bytes (389 KB)
+==================================================
+downloaded 389 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/BH_1.78.0-0.tgz'
+Content type 'application/x-gzip' length 12587148 bytes (12.0 MB)
+==================================================
+downloaded 12.0 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/dqrng_0.3.0.tgz'
+Content type 'application/x-gzip' length 517832 bytes (505 KB)
+==================================================
+downloaded 505 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/RcppEigen_0.3.3.9.2.tgz'
+Content type 'application/x-gzip' length 4700210 bytes (4.5 MB)
+==================================================
+downloaded 4.5 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/melt_1.8.0.tgz'
+Content type 'application/x-gzip' length 12905293 bytes (12.3 MB)
+==================================================
+downloaded 12.3 MB
+
+
+The downloaded binary packages are in
+	/var/folders/56/x41j57bx17z4l9p5_421zn280000gn/T//RtmpR8cRtl/downloaded_packages
+> install.packages("CAST")
+also installing the dependencies ‘listenv’, ‘parallelly’, ‘future’, ‘globals’, ‘future.apply’, ‘progressr’, ‘numDeriv’, ‘SQUAREM’, ‘lava’, ‘prodlim’, ‘colorspace’, ‘iterators’, ‘gower’, ‘hardhat’, ‘ipred’, ‘lubridate’, ‘purrr’, ‘tidyr’, ‘timeDate’, ‘farver’, ‘labeling’, ‘munsell’, ‘RColorBrewer’, ‘viridisLite’, ‘foreach’, ‘ModelMetrics’, ‘pROC’, ‘recipes’, ‘reshape2’, ‘gtable’, ‘isoband’, ‘scales’, ‘caret’, ‘ggplot2’, ‘reshape’, ‘FNN’, ‘plyr’, ‘zoo’
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/listenv_0.8.0.tgz'
+Content type 'application/x-gzip' length 103223 bytes (100 KB)
+==================================================
+downloaded 100 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/parallelly_1.32.1.tgz'
+Content type 'application/x-gzip' length 302748 bytes (295 KB)
+==================================================
+downloaded 295 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/future_1.28.0.tgz'
+Content type 'application/x-gzip' length 656510 bytes (641 KB)
+==================================================
+downloaded 641 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/globals_0.16.1.tgz'
+Content type 'application/x-gzip' length 106135 bytes (103 KB)
+==================================================
+downloaded 103 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/future.apply_1.9.1.tgz'
+Content type 'application/x-gzip' length 151535 bytes (147 KB)
+==================================================
+downloaded 147 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/progressr_0.11.0.tgz'
+Content type 'application/x-gzip' length 272289 bytes (265 KB)
+==================================================
+downloaded 265 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/numDeriv_2016.8-1.1.tgz'
+Content type 'application/x-gzip' length 113250 bytes (110 KB)
+==================================================
+downloaded 110 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/SQUAREM_2021.1.tgz'
+Content type 'application/x-gzip' length 176568 bytes (172 KB)
+==================================================
+downloaded 172 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/lava_1.6.10.tgz'
+Content type 'application/x-gzip' length 2988469 bytes (2.9 MB)
+==================================================
+downloaded 2.9 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/prodlim_2019.11.13.tgz'
+Content type 'application/x-gzip' length 422363 bytes (412 KB)
+==================================================
+downloaded 412 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/colorspace_2.0-3.tgz'
+Content type 'application/x-gzip' length 2624460 bytes (2.5 MB)
+==================================================
+downloaded 2.5 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/iterators_1.0.14.tgz'
+Content type 'application/x-gzip' length 345398 bytes (337 KB)
+==================================================
+downloaded 337 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/gower_1.0.0.tgz'
+Content type 'application/x-gzip' length 165389 bytes (161 KB)
+==================================================
+downloaded 161 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/hardhat_1.2.0.tgz'
+Content type 'application/x-gzip' length 795388 bytes (776 KB)
+==================================================
+downloaded 776 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/ipred_0.9-13.tgz'
+Content type 'application/x-gzip' length 384988 bytes (375 KB)
+==================================================
+downloaded 375 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/lubridate_1.8.0.tgz'
+Content type 'application/x-gzip' length 1483283 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/purrr_0.3.5.tgz'
+Content type 'application/x-gzip' length 418899 bytes (409 KB)
+==================================================
+downloaded 409 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/tidyr_1.2.1.tgz'
+Content type 'application/x-gzip' length 998893 bytes (975 KB)
+==================================================
+downloaded 975 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/timeDate_4021.106.tgz'
+Content type 'application/x-gzip' length 1579983 bytes (1.5 MB)
+==================================================
+downloaded 1.5 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/farver_2.1.1.tgz'
+Content type 'application/x-gzip' length 1943238 bytes (1.9 MB)
+==================================================
+downloaded 1.9 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/labeling_0.4.2.tgz'
+Content type 'application/x-gzip' length 60389 bytes (58 KB)
+==================================================
+downloaded 58 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/munsell_0.5.0.tgz'
+Content type 'application/x-gzip' length 241895 bytes (236 KB)
+==================================================
+downloaded 236 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/RColorBrewer_1.1-3.tgz'
+Content type 'application/x-gzip' length 53152 bytes (51 KB)
+==================================================
+downloaded 51 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/viridisLite_0.4.1.tgz'
+Content type 'application/x-gzip' length 1297022 bytes (1.2 MB)
+==================================================
+downloaded 1.2 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/foreach_1.5.2.tgz'
+Content type 'application/x-gzip' length 136295 bytes (133 KB)
+==================================================
+downloaded 133 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/ModelMetrics_1.2.2.2.tgz'
+Content type 'application/x-gzip' length 557661 bytes (544 KB)
+==================================================
+downloaded 544 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/pROC_1.18.0.tgz'
+Content type 'application/x-gzip' length 1121281 bytes (1.1 MB)
+==================================================
+downloaded 1.1 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/recipes_1.0.1.tgz'
+Content type 'application/x-gzip' length 1416397 bytes (1.4 MB)
+==================================================
+downloaded 1.4 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/reshape2_1.4.4.tgz'
+Content type 'application/x-gzip' length 333392 bytes (325 KB)
+==================================================
+downloaded 325 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/gtable_0.3.1.tgz'
+Content type 'application/x-gzip' length 158928 bytes (155 KB)
+==================================================
+downloaded 155 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/isoband_0.2.6.tgz'
+Content type 'application/x-gzip' length 3386455 bytes (3.2 MB)
+==================================================
+downloaded 3.2 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/scales_1.2.1.tgz'
+Content type 'application/x-gzip' length 608312 bytes (594 KB)
+==================================================
+downloaded 594 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/caret_6.0-93.tgz'
+Content type 'application/x-gzip' length 3578405 bytes (3.4 MB)
+==================================================
+downloaded 3.4 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/ggplot2_3.3.6.tgz'
+Content type 'application/x-gzip' length 4125157 bytes (3.9 MB)
+==================================================
+downloaded 3.9 MB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/reshape_0.8.9.tgz'
+Content type 'application/x-gzip' length 168752 bytes (164 KB)
+==================================================
+downloaded 164 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/FNN_1.1.3.1.tgz'
+Content type 'application/x-gzip' length 134861 bytes (131 KB)
+==================================================
+downloaded 131 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/plyr_1.8.7.tgz'
+Content type 'application/x-gzip' length 1014519 bytes (990 KB)
+==================================================
+downloaded 990 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/zoo_1.8-11.tgz'
+Content type 'application/x-gzip' length 1017258 bytes (993 KB)
+==================================================
+downloaded 993 KB
+
+trying URL 'https://cran.rstudio.com/bin/macosx/contrib/4.2/CAST_0.7.0.tgz'
+Content type 'application/x-gzip' length 2476573 bytes (2.4 MB)
+==================================================
+downloaded 2.4 MB
+
+
+The downloaded binary packages are in
+	/var/folders/56/x41j57bx17z4l9p5_421zn280000gn/T//RtmpR8cRtl/downloaded_packages
+> library(CAST)
+> library(melt)
+> melted
+Error: object 'melted' not found
+> library(pivottabler)
+> melted.bank=melt(train,id=c("CreditCard","Personal Loan"),variable="Online")
+Error in melt(train, id = c("CreditCard", "Personal Loan"), variable = "Online") : 
+  could not find function "melt"
+> bank = read_excel()
+Error in check_file(path) : argument "path" is missing, with no default
+> bank = read_excel(UniversalBank_2)
+Error: `path` must be a string
+> Bank$Personal.Loan = as.factor(bank$Personal.Loan)
+Error in is.factor(x) : object 'bank' not found
+> bank$Online = as.factor(bank$Online)
+Error in is.factor(x) : object 'bank' not found
+> bank$CreditCard = as.factor(bank$CreditCard)
+Error in is.factor(x) : object 'bank' not found
+> set.seed(1)
+> train.index<-sample(row.names(bank),0.6*dim(bank)(1))
+Error in row.names(bank) : object 'bank' not found
+> test.index<-setdiff(row.names(bank),train.index)
+Error in row.names(bank) : object 'bank' not found
+> train.df<-bank[train.index,]
+Error: object 'bank' not found
+> test.df<-bank[train.index,]
+Error: object 'bank' not found
+> train<-bank[train.index,]
+Error: object 'bank' not found
+> test=bank[train.index,]
+Error: object 'bank' not found
+> melted.bank=melt(train,id=c("CreditCard","Personal.Loan"),variable.names"Online")
+Error: unexpected string constant in "melted.bank=melt(train,id=c("CreditCard","Personal.Loan"),variable.names"Online""
+> recast.bank=dcast(melted.bank,CreditCard+Personal.Loan-Online)
+Error in dcast(melted.bank, CreditCard + Personal.Loan - Online) : 
+  could not find function "dcast"
+> recast.bank[,c(1:2,14)]
+Error: object 'recast.bank' not found
+> install.packages("bank")
+Warning in install.packages :
+  package ‘bank’ is not available for this version of R
+
+A version of this package for your version of R might be available elsewhere,
+see the ideas at
+https://cran.r-project.org/doc/manuals/r-patched/R-admin.html#Installing-packages
+> 
+> rm(list=ls())
+> setwd("/Users/kayhanbabakan/OneDrive/MIT/Data Mining/Data_export")
+Error in setwd("/Users/kayhanbabakan/OneDrive/MIT/Data Mining/Data_export") : 
+  cannot change working directory
+> bank = read.csv("UniversalBank.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'UniversalBank.csv': No such file or directory
+> bank = read_excel("UniversalBank_2")
+Error: `path` does not exist: ‘UniversalBank_2’
+> library(bank)
+Error in library(bank) : there is no package called ‘bank’
+> library(pivottabler)
+> melt(train,id=c("CreditCard","Personla.Loan"),variable= "Online")
+Error in melt(train, id = c("CreditCard", "Personla.Loan"), variable = "Online") : 
+  could not find function "melt"
+> melt::
+Error: unexpected end of line in "melt::"
+> melt()
+Error in melt() : could not find function "melt"
+> CAST::trainDI("CreditCard","Personal.Loan","Online")
+note: variables were not weighted either because no weights or model were given,
+    or no variable importance could be retrieved from the given model.
+    Check caret::varImp(model)
+Error in model$control : $ operator is invalid for atomic vectors
+> CAST::trainDI("Online")
+Error in model$trainingData : $ operator is invalid for atomic vectors
+> library(privottabler)
+Error in library(privottabler) : 
+  there is no package called ‘privottabler’
+> library(pivottabler)
+> View(qpvt)
+> qpvt(dataFrame = UniversalBank_2, rows = )
+Error in checkArgument(3, TRUE, "", "qpvt", dataFrame, missing(dataFrame),  : 
+  object 'UniversalBank_2' not found
+> {
++   arguments <- list(...)
++   checkArgument(3, TRUE, "", "qpvt", dataFrame, missing(dataFrame), 
++     allowMissing = FALSE, allowNull = FALSE, allowedClasses = "data.frame")
++   checkArgument(3, TRUE, "", "qpvt", rows, missing(rows), 
++     allowMissing = TRUE, allowNull = TRUE, allowedClasses = "character")
++   checkArgument(3, TRUE, "", "qpvt", columns, missing(columns), 
++     allowMissing = TRUE, allowNull = TRUE, allowedClasses = "character")
++   checkArgument(3, TRUE, "", "qpvt", calculations, missing(calculations), 
++     allowMissing = TRUE, allowNull = TRUE, allowedClasses = "character")
++   checkArgument(3, TRUE, "", "qpvt", theme, missing(theme), 
++     allowMissing = TRUE, allowNull = TRUE, allowedClasses = c("character", 
++       "list", "PivotStyles"), allowedListElementClasses = "character")
++   checkArgument(3, TRUE, "", "qpvt", replaceExistingStyles, 
++     missing(replaceExistingStyles), allowMissing = TRUE, 
++     allowNull = FALSE, allowedClasses = "logical")
++   checkArgument(3, TRUE, "", "qpvt", tableStyle, missing(tableStyle), 
++     allowMissing = TRUE, allowNull = TRUE, allowedClasses = c("character", 
++       "list", "PivotStyle"))
++   checkArgument(3, TRUE, "", "qpvt", headingStyle, missing(headingStyle), 
++     allowMissing = TRUE, allowNull = TRUE, allowedClasses = c("character", 
++       "list", "PivotStyle"))
++   checkArgument(3, TRUE, "", "qpvt", cellStyle, missing(cellStyle), 
++     allowMissing = TRUE, allowNull = TRUE, allowedClasses = c("character", 
++       "list", "PivotStyle"))
++   checkArgument(3, TRUE, "", "qpvt", totalStyle, missing(totalStyle), 
++     allowMissing = TRUE, allowNull = TRUE, allowedClasses = c("character", 
++       "list", "PivotStyle"))
++   argumentCheckMode <- arguments$argumentCheckMode
++   if (is.null(argumentCheckMode)) 
++     argumentCheckMode <- "auto"
++   compatibility <- arguments$compatibility
++   dataName <- deparse(substitute(dataFrame))
++   pt <- buildPivot(functionName = "qpvt", argumentCheckMode = argumentCheckMode, 
++     dataFrame = dataFrame, dataName = dataName, rows = rows, 
++     columns = columns, calculations = calculations, format = arguments[["format"]], 
++     formats = arguments[["formats"]], totalsSpecified = ("totals" %in% 
++       names(arguments)), totals = arguments[["totals"]], 
++     theme = theme, replaceExistingStyles = replaceExistingStyles, 
++     tableStyle = tableStyle, headingStyle = headingStyle, 
++     cellStyle = cellStyle, totalStyle = totalStyle, compatibility = compatibility)
++   pt$evaluatePivot()
++   return(pt)
++ }
+Error: '...' used in an incorrect context
+> 
+> library(pivottabler)
+> pt<-PivotTable$new()
+> pt$addData(UniversalBank_2)
+Error in checkArgument(private$p_argumentCheckMode, TRUE, "PivotTable",  : 
+  object 'UniversalBank_2' not found
+> View(qpvt)
+> function (dataFrame, rows = NULL, columns = NULL, calculations = NULL, 
++   theme = NULL, replaceExistingStyles = FALSE, tableStyle = NULL, 
++   headingStyle = NULL, cellStyle = NULL, totalStyle = NULL, 
++   ...) 
++ View(getCompactTheme)
+function (dataFrame, rows = NULL, columns = NULL, calculations = NULL, 
+  theme = NULL, replaceExistingStyles = FALSE, tableStyle = NULL, 
+  headingStyle = NULL, cellStyle = NULL, totalStyle = NULL, 
+  ...) 
+View(getCompactTheme)
+> View(getDefaultTheme)
+> function (parentPivot, themeName = "default") 
++ View(getLargePlainTheme)
+function (parentPivot, themeName = "default") 
+View(getLargePlainTheme)
+> View(getSimpleColoredTheme)
+> function (parentPivot, themeName = "coloredTheme", colors = NULL, 
++   fontName = NULL, theme = NULL) 
++ View(getStandardTableTheme)
+function (parentPivot, themeName = "coloredTheme", colors = NULL, 
+  fontName = NULL, theme = NULL) 
+View(getStandardTableTheme)
+> View(getTheme)
+> function (parentPivot, themeName = NULL) 
++ View(pivottabler)
+function (parentPivot, themeName = NULL) 
+View(pivottabler)
+> View(pivottablerOutput)
+> function (outputId, width = "100%", height = "100%") 
++ View(qhpvt)
+function (outputId, width = "100%", height = "100%") 
+View(qhpvt)
+> View(qlpvt)
+> function (dataFrame, rows = NULL, columns = NULL, calculations = NULL, 
++   ...) 
++ View(qpvt)
+function (dataFrame, rows = NULL, columns = NULL, calculations = NULL, 
+  ...) 
+View(qpvt)
+> View(renderBasicTable)
+> View(renderPivottabler)
+> View(renderBasicTable)
+> function (matrix = NULL, stylePrefix = NULL, columnNamesAsHeader = FALSE, 
++   rowNamesAsHeader = FALSE, columnAlignment = "right") 
++ View(renderPivottabler)
+function (matrix = NULL, stylePrefix = NULL, columnNamesAsHeader = FALSE, 
+  rowNamesAsHeader = FALSE, columnAlignment = "right") 
+View(renderPivottabler)
+> function (expr, env = parent.frame(), quoted = FALSE) 
++ library(pivottabler)
+function (expr, env = parent.frame(), quoted = FALSE) 
+library(pivottabler)
+> qpvt(UniversalBank_2, "Online","CreditCard", "Personal.Loan")
+Error in checkArgument(3, TRUE, "", "qpvt", dataFrame, missing(dataFrame),  : 
+  object 'UniversalBank_2' not found
+> library("dplyr")
+
+Attaching package: ‘dplyr’
+
+The following objects are masked from ‘package:stats’:
+
+    filter, lag
+
+The following objects are masked from ‘package:base’:
+
+    intersect, setdiff, setequal, union
+
+> library("tidyr")
+> library("ggplot2")
+> library("ROCR")
+Error in library("ROCR") : there is no package called ‘ROCR’
+> rm(list=ls())
+> setwd("/Users/kayhanbabakan/OneDrive/MIT/Data Mining/Data_export")
+Error in setwd("/Users/kayhanbabakan/OneDrive/MIT/Data Mining/Data_export") : 
+  cannot change working directory
+> bank = read.csv("UniversalBank.csv")
+Error in file(file, "rt") : cannot open the connection
+In addition: Warning message:
+In file(file, "rt") :
+  cannot open file 'UniversalBank.csv': No such file or directory
+> melted.bank = melt(train,id=c("CreditCard","Personal.Loan"),variable= "Online")
+Error in melt(train, id = c("CreditCard", "Personal.Loan"), variable = "Online") : 
+  could not find function "melt"
+> melt::(train,id=c("CreditCard","Personal.Loan"),variable= "Online")
+Error: unexpected '(' in "melt::("
+> melt(train,id=c("CreditCard","Personal.Loan"),variable= "Online")
+Error in melt(train, id = c("CreditCard", "Personal.Loan"), variable = "Online") : 
+  could not find function "melt"
+> melt::(("CreditCard","Personal.Loan"),variable= "Online")
+Error: unexpected '(' in "melt::("
+> qpvt(bhmtrains, "Online", "CreditCard", "Personal.Loan")
+Error: PivotDataGroup$addDataGroups():  Column name 'Online' not found in 'bhmtrains' data frame.
+> PivotDataGroup$addDataGroups(UniversalBank_2)
+Error: object 'PivotDataGroup' not found
+> View(bhmtrains)
+> qpvt(UniversalBank_2, "Online", "CreditCard", "Personal.Loan")
+Error in checkArgument(3, TRUE, "", "qpvt", dataFrame, missing(dataFrame),  : 
+  object 'UniversalBank_2' not found
+> library(pivottabler)
+> pt<-PivotTable$new(UniversalBank_2)
+Error in checkArgument(4, TRUE, "PivotTable", "initialize", processingLibrary,  : 
+  object 'UniversalBank_2' not found
+> 
